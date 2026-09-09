@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loja Sonho Meu - Listagem de Itens</title>
@@ -131,7 +132,8 @@
           <img
             class="perfil-foto"
             src="https://i.pravatar.cc/100?img=47"
-            alt="Foto de perfil" />
+            alt="Foto de perfil"
+          />
         </div>
       </div>
 
@@ -140,7 +142,8 @@
           class="busca-campo"
           type="text"
           id="campoBusca"
-          placeholder="Buscar produtos..." />
+          placeholder="Buscar produtos..."
+        />
         <span class="busca-lupa">&#128269;</span>
       </div>
 
@@ -152,12 +155,16 @@
         <img
           class="perfil-foto"
           src="https://i.pravatar.cc/100?img=47"
-          alt="Foto de perfil" />
+          alt="Foto de perfil"
+        />
       </div>
     </header>
 
     <nav class="filtros">
-      <button class="filtro-botao filtro-ativo" onclick="filtrar('todos', this)">
+      <button
+        class="filtro-botao filtro-ativo"
+        onclick="filtrar('todos', this)"
+      >
         Todos
       </button>
       <button class="filtro-botao" onclick="filtrar('eletronicos', this)">
@@ -172,15 +179,22 @@
 
     <main class="conteudo">
       <h1 class="titulo-secao">Produtos em destaque</h1>
-      <p class="subtitulo-secao">Escolha uma categoria ou pesquise pelo nome.</p>
+      <p class="subtitulo-secao">
+        Escolha uma categoria ou pesquise pelo nome.
+      </p>
 
       <section class="lista" id="lista">
-        <article class="card" data-categoria="eletronicos" data-nome="fone bluetooth">
+        <article
+          class="card"
+          data-categoria="eletronicos"
+          data-nome="fone bluetooth"
+        >
           <img
             class="card-foto"
             draggable="true"
             src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=600"
-            alt="Fone de ouvido" />
+            alt="Fone de ouvido"
+          />
           <span class="card-tag">Eletrônicos</span>
           <h2 class="card-nome">Fone Bluetooth</h2>
           <p class="card-descricao">Som limpo e bateria de longa duração.</p>
@@ -190,12 +204,17 @@
           </div>
         </article>
 
-        <article class="card" data-categoria="eletronicos" data-nome="smartwatch">
+        <article
+          class="card"
+          data-categoria="eletronicos"
+          data-nome="smartwatch"
+        >
           <img
             class="card-foto"
             draggable="true"
             src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=600"
-            alt="Relógio inteligente" />
+            alt="Relógio inteligente"
+          />
           <span class="card-tag">Eletrônicos</span>
           <h2 class="card-nome">Smartwatch</h2>
           <p class="card-descricao">Monitore passos, sono e notificações.</p>
@@ -205,12 +224,17 @@
           </div>
         </article>
 
-        <article class="card" data-categoria="casa" data-nome="luminaria de mesa">
+        <article
+          class="card"
+          data-categoria="casa"
+          data-nome="luminaria de mesa"
+        >
           <img
             class="card-foto"
             draggable="true"
             src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?q=80&w=600"
-            alt="Luminária de mesa" />
+            alt="Luminária de mesa"
+          />
           <span class="card-tag">Casa</span>
           <h2 class="card-nome">Luminária de Mesa</h2>
           <p class="card-descricao">Luz suave para estudar e trabalhar.</p>
@@ -225,7 +249,8 @@
             class="card-foto"
             draggable="true"
             src="https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?q=80&w=600"
-            alt="Cafeteira" />
+            alt="Cafeteira"
+          />
           <span class="card-tag">Casa</span>
           <h2 class="card-nome">Cafeteira</h2>
           <p class="card-descricao">Café pronto em poucos minutos.</p>
@@ -235,12 +260,17 @@
           </div>
         </article>
 
-        <article class="card" data-categoria="esporte" data-nome="tenis de corrida">
+        <article
+          class="card"
+          data-categoria="esporte"
+          data-nome="tenis de corrida"
+        >
           <img
             class="card-foto"
             draggable="true"
             src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600"
-            alt="Tênis de corrida" />
+            alt="Tênis de corrida"
+          />
           <span class="card-tag">Esporte</span>
           <h2 class="card-nome">Tênis de Corrida</h2>
           <p class="card-descricao">Leve, confortável e com boa aderência.</p>
@@ -250,12 +280,17 @@
           </div>
         </article>
 
-        <article class="card" data-categoria="esporte" data-nome="garrafa termica">
+        <article
+          class="card"
+          data-categoria="esporte"
+          data-nome="garrafa termica"
+        >
           <img
             class="card-foto"
             draggable="true"
             src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?q=80&w=600"
-            alt="Garrafa térmica" />
+            alt="Garrafa térmica"
+          />
           <span class="card-tag">Esporte</span>
           <h2 class="card-nome">Garrafa Térmica</h2>
           <p class="card-descricao">Mantém a temperatura por 12 horas.</p>
@@ -267,3 +302,42 @@
 
         <article class="card" data-categoria="moda" data-nome="mochila casual">
           <img
+            class="card-foto"
+            draggable="true"
+            src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=600"
+            alt="Mochila"
+          />
+          <span class="card-tag">Moda</span>
+          <h2 class="card-nome">Mochila Casual</h2>
+          <p class="card-descricao">Espaço para notebook e materiais.</p>
+          <div class="card-rodape">
+            <span class="card-preco">R$ 149</span>
+            <button class="card-botao">Comprar</button>
+          </div>
+        </article>
+
+        <article class="card" data-categoria="moda" data-nome="oculos de sol">
+          <img
+            class="card-foto"
+            draggable="true"
+            src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=600"
+            alt="Óculos de sol"
+          />
+          <span class="card-tag">Moda</span>
+          <h2 class="card-nome">Óculos de Sol</h2>
+          <p class="card-descricao">Proteção UV com estilo moderno.</p>
+          <div class="card-rodape">
+            <span class="card-preco">R$ 119</span>
+            <button class="card-botao">Comprar</button>
+          </div>
+        </article>
+      </section>
+
+      <p class="aviso" id="aviso">Nenhum produto encontrado nesta busca.</p>
+    </main>
+
+    <footer class="rodape">
+      <p>Sonho Store &copy; 2026 - Projeto de estudo da Fundação Sonho Meu</p>
+    </footer>
+  </body>
+</html>
