@@ -5,41 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Page Title</title>
     <link rel="stylesheet" href="main.css" />
+
+    <style>
+      * {
+        margin: 0px;
+      }
+      .titulo-foto {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 200px;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+      }
+
+      body {
+        background-color: #ffffff;
+        color: #000000;
+        font-family: arial;
+        font-size: 16px;
+        line-height: 1;
+      }
+
+      .sub-titulo {
+        position: relative;
+        text-align: center;
+      }
+
+      .sub-titulo::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        width: 37%;
+        height: 2px;
+        background-color: black;
+        z-index: 0;
+      }
+
+      .sub-titulo::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        width: 37%;
+        height: 2px;
+        background-color: rgb(0, 0, 0);
+        z-index: 0;
+      }
+
+      .sub-titulo span {
+        position: relative;
+        z-index: 1;
+        background-color: white;
+        padding: 0 15px;
+
+        .aprendendo-a-programar-Html-Css-e-Java-Script {
+          position: relative;
+          text-align: center;
+        }
+      }
+
+      .final {
+        font-family: arial;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .finalimg {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+      }
+    </style>
   </head>
   <body>
-    <div>
-      <h1>Ruan Brayan</h1>
+    <div class="titulo-foto">
+      <div>
+        <h1>Ruan Brayan</h1>
+        <h2>cursando progamação</h2>
+        <div class="aprendendo-a-programar-Html-Css-e-Java-Script">
+          <p>aprendendo a progamar Html,Css e Java Script.</p>
+        </div>
+        <text-family></text-family>
+      </div>
       <img
-        src="./ChatGPT Image 1 de out. de 2026, 19_51_37 (1).png"
-        alt="menino com bolsa rosa nas costas"
-      /width="100" height="100" >
+        src="meninocampeao.png"
+        alt="menino com medalha de campeao jogos escolares"
+        width="200"
+        height="200"
+      />
     </div>
     <br />
 
     <div>
-      <h2>cursando progamação</h2>
+      <div class="sub-titulo"><h2>sobre mim</h2></div>
       <p>
         Estudante do 8º ano.Estudo na fundação jicred no período vespertino, e
-        pratico diversos tipos de atividades na fundação.
+        pratico diversos tipos de atividades na fundação
+      </p>
+    </div>
+
+    <div class="final">
+      <h1>Minhas Habilidades</h1>
+      <p>
+        Eu sou 5º Gub de Taekwondo(faixa verde ponta azul),tenho medalhas
+        municipais, regionais e estaduais, eu luto bem, me esforço bastante nos
+        treinos e sou muito esforçado. Eu faço futebol e já participei de vários
+        campeonatos pela fundação jicred. Eu faço teatro,tenho um troféu de
+        melhor ator do festival de teatro da Fundação. Toco violino e sou bom em
+        matematica.
       </p>
 
-      <div>
-        <h2>sobre mim</h2>
-        <p>
-          Estudante do 8º ano.Estudo na fundação jicred no período vespertino, e
-          pratico diversos tipos de atividades na fundação
-        </p>
-        <div>
-          <h1>Minhas Habilidades</h1>
-          <p>
-            Eu sou 5º Gub de Taekwondo(faixa verde ponta azul),tenho medalhas
-            municipais, regionais e estaduais, eu luto bem, me esforço bastante
-            nos treinos e sou muito esforçado. Eu faço futebol e já participei
-            de vários campeonatos pela fundação jicred. Eu faço teatro,tenho um
-            troféu de melhor ator do festival de teatro da Fundação. Toco
-            violino. Sou bom em matematica.
-          </p>
-        </div>
+      <h1>O que eu amo</h1>
+      <h2>Taekwondo</h2>
+      <div class="finalimg">
+        <img
+          src="campeonatotaekwondo.png"
+          width="300"
+          height="300"
+          alt="campeonato de taekwondo"
+        />
+        <img
+          src="Brayan.png"
+          width="300"
+          height="300"
+          alt="JEMS de Taekwondo"
+        />
+        <img
+          src="Brayanpreparando.png"
+          width="300"
+          height="300"
+          alt="Brayan preparando para o JEMS de taekwondo"
+        />
+        <img
+          src="BrayanvenceualutadoJEMS.png"
+          width="300"
+          height="300"
+          alt="Brayan classifica para JOER"
+        />
       </div>
     </div>
   </body>
